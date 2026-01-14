@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+.navegacion{
+    margin:auto;
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*quitar las viñetas*/
+ul li{
+  list-style: none;
+
+}
+/*estilo para los menus*/
+ul li a{
+   text-decoration: none;
+   background-color: rgb(245, 161, 106);
+   color:rgb(13, 14, 13);
+   padding: 10px 15px;
+   display:block;
+}
+
+ul li a:hover{
+    background-color: rgb(247, 100, 100);
+}
+/*estructura para los botones*/
+ul>li{
+    float:left;
+    position:relative;
+
+}
+ul li ul li{
+    float:none;
+    
+}
+
+ul li ul{
+    display: none;/*los subtemas se ocultan*/
+    position: absolute;
+    min-width: 140px;
+}
+
+ul li:hover>ul{
+    display:block; /*los subtemas aparecen al hacer clic con el mouse*/
+}
+/*para que aparezcan con submenus de tercer nivel*/
+ul li ul li{
+    position: relative;
+}
+ul li ul li ul{
+    right: -140px;
+    top:0px;
+}
+
+header{
+    background-color:rgb(245, 161, 106);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav{
+    display:flex;
+    gap: 30px;
+}
+header nav a{
+    text-decoration:none ;
+    font-size: 25px;
+    color:rgb(250, 250, 250);
+
+}
+header nav a:hover{
+    color:rgb(214, 222, 223);
+}
+
+#fondo {
+  background-image: url('photo-1492144534655-ae79c964c9d7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inicio-texto {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px 40px;
+  text-align: center;
+}
+
+img {
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
